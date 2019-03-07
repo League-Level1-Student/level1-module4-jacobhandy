@@ -7,11 +7,13 @@
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.net.URL;
+import java.util.Random;
 
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
  
 /** We’re going to make a slideshow of cool optical illusions. When the user clicks on an illusion, a new one will be loaded. **/
 
@@ -65,14 +67,24 @@ public class BookOfIllusions extends MouseAdapter {
 		frame.add(duck);
 		// 14. pack the frame
 		frame.pack();
+		  
+		
+			JOptionPane.showMessageDialog(null, "Go to adfly.com to get some viruses on your computer!");
+		
+	    	JOptionPane.showMessageDialog(null, "Vote against Trump in 2020!");
+	   
+	    	JOptionPane.showMessageDialog(null, "Vote to make America Communist!");
+	  
+	    	JOptionPane.showMessageDialog(null, "John Wick is in tilted towers and he needs YOUR help to get him a gold scar so he can surrvive! All he needs is your mom's credit card number!");
+	   
 	}
 
 	// [OPTIONAL] 15. goad your users with some annoying or witty pop-ups
-                                                                                                                                           
+                                                                                                                                         
 	/*
 	 * To use this method, the image must be placed in your Eclipse project under "default package".
 	 */
-	public JLabel loadImageFromComputer(String fileName) {
+	public  JLabel loadImageFromComputer(String fileName) {
 		URL imageURL = getClass().getResource(fileName);
 		Icon icon = new ImageIcon(imageURL);
 		return new JLabel(icon);
