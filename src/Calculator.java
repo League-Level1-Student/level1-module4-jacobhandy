@@ -5,17 +5,17 @@ public class Calculator {
 JTextField numone;
 JTextField numtwo;
 JFrame frame;
-  float Add(float x, float y) {
+  int Add(int x, int y) {
 	return x + y;
 }
 
-  float Subtract(float x, float y) {
+  int Subtract(int x, int y) {
 	return x - y;
 }
-  float Multiply(float x, float y) {
+  int Multiply(int x, int y) {
 	return x*y;
 }
-  float Divide(float x, float y) {
+  int Divide(int x, int y) {
 	return x/y;
 	
   }
