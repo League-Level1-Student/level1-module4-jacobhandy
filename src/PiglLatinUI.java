@@ -11,14 +11,14 @@ public class PiglLatinUI implements MouseListener {
 JFrame frame;
 JPanel panel;
 JTextField input;
-JLabel output;
+JTextField output;
 JButton translate;
 PigLatinTranslator pigLatin;
 public void CreateUI() {
 	frame = new JFrame();
 	panel = new JPanel();
 	input = new JTextField("", 20);
-	output = new JLabel();
+	output = new JTextField("", 20);
 	translate = new JButton();
 	pigLatin = new PigLatinTranslator();
 	translate.addMouseListener(this);
@@ -27,7 +27,7 @@ public void CreateUI() {
     panel.add(input);
     panel.add(output);
     panel.add(translate);
-
+  
     frame.setVisible(true);
     frame.pack();
    
@@ -35,7 +35,7 @@ public void CreateUI() {
 @Override
 public void mouseClicked(MouseEvent e) {
 	// TODO Auto-generated method stub
-	if(e.getSource().equals("translate")) {
+	if(e.getSource() == translate) {
 		String result = pigLatin.translate(input.getText());
 		output.setText(result);
 	}
