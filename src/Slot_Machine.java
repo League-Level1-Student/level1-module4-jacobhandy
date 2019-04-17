@@ -52,6 +52,26 @@ public void run() {
 	frame.add(slots, BorderLayout.CENTER);
 	
 }
+private void spinReels() {
+	slots.removeAll();
+	////call spinReel for each reel
+	//revalidate the reels panel
+	//check for win
+}
+
+private int spinReel() {
+   return 0;
+   //get random value 0 - 2
+   //load image label based on random number
+   //add label to reels panel
+   //return the random number
+	
+}
+
+
+
+
+
 @Override
 public void mouseClicked(MouseEvent e) {
 	// TODO Auto-generated method stub
