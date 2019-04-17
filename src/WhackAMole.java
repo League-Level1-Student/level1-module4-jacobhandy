@@ -15,8 +15,8 @@ JFrame frame;
 JPanel panel;
 Dimension d = new Dimension(100,25);
 	JButton b;
-	int score = 0;
-	
+	String score ;
+	int value;
 	JLabel points;
 public void drawButtons() {
 	Random r = new Random();
@@ -38,7 +38,9 @@ public void drawButtons() {
 	panel = new JPanel();
 	frame.setVisible(true);
 	points = new JLabel();
-	 
+ 
+
+    points.setText(score);
 	frame.add(panel);
 	frame.setSize(275, 500);
 	
@@ -64,6 +66,9 @@ public void drawButtons() {
 		 else {
 			 System.out.println("Normie Alert");
 			 drawButtons();
+			 panel.removeAll();
+			  drawButtons();
+			  panel.revalidate();
 		 }
 		}
 	 
